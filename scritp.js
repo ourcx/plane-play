@@ -318,6 +318,7 @@ function enemyMove(ele, attr) {
     if (moveVal >= gameH) {
       clearInterval(ele.timer);
       enemysP.removeChild(ele);
+      enemys.removeChild(ele);
       enemyss.splice(0, 1);
     } else {
       ele.style[attr] = moveVal + speed + "px";
@@ -499,4 +500,4 @@ document.getElementById('restart').onclick = function () {
 
 //现在要解决的问题有两个：
 //1.本地缓存的问题，没把数据保存在浏览器//已经解决了
-//2.还有的一个问题是removechild这个函数没有把元素删除，导致游戏到后面会特别卡
+//2.还有的一个问题是removechild这个函数没有把元素删除，导致游戏到后面会特别卡//应该和game的宽高有关，还有remove的问题
