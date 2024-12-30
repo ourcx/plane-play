@@ -423,13 +423,16 @@ function danger(ele) {
 
 // 游戏结束储存最大得分i的分数
 function locate(ii) {
-  let value = sessionStorage.getItem('sun');
-  if (value = null) {
+  let value = localStorage.getItem('sun');
+  console.log(value);
+  if (value === null) {
     value = 0;
   }
+  document.getElementById('sun').innerHTML = value;
+  document.getElementById('reals').innerHTML = ii
   if (ii > value) {
-    sessionStorage.setItem('sun', ii);
-    let value = sessionStorage.getItem('sun');
+    localStorage.setItem('sun', ii);
+    let value = localStorage.getItem('sun');
 //value出了问题
     document.getElementById('sun').innerHTML = value;
     document.getElementById('reals').innerHTML = value;
@@ -490,3 +493,10 @@ document.getElementById('restart').onclick = function () {
   location.reload()
   //要去清除已经生成的东西，再去重新开始，还要解决照片的问题
 }
+
+
+
+
+//现在要解决的问题有两个：
+//1.本地缓存的问题，没把数据保存在浏览器//已经解决了
+//2.还有的一个问题是removechild这个函数没有把元素删除，导致游戏到后面会特别卡
