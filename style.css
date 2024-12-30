@@ -1,0 +1,193 @@
+body {
+    background-image: url(image/mainbg.jpg);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-size: 100%;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+:root{
+    font-family: '华文楷体';
+    
+  }
+
+*{
+    font-family: '华文楷体';
+}
+
+
+/* 登录界面 */
+.mainload {
+    width: 3rem;
+    height: 2.2rem;
+    position: relative;
+    left: 35%;
+    top: 1.7rem;
+    background-color: rgba(165, 165, 165, 0.5);
+    backdrop-filter: blur(50px);
+    border-radius: .1544rem;
+
+}
+
+.load {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+.title {
+    text-align: center;
+    margin: 0.08rem 0 0.05rem 0;
+}
+
+
+/* 游戏界面 */
+#game {
+    top: 0rem;
+    height:25rem;
+    width: 20rem;
+    display: none;
+}
+
+#gameEnter {
+    display: none;
+    height: 40rem
+}
+
+#myPlane {
+    width: 66px;
+    height: 80px;
+    position: absolute;
+    left: 5rem;
+    top: 5rem;
+    cursor: pointer;
+}
+
+#myPlane {
+    width: 80px;
+    height: 80px;
+}
+
+#myPlane img {
+    cursor: move;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+#enemys {
+    height: 42.5rem;
+    width: 50rem;
+    position: absolute;
+}
+
+#bullets,
+#enemys {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10;
+
+}
+
+.b {
+    width: 6px;
+    height: 14px;
+    position: absolute;
+    left: 5.21rem;
+    top: 5rem;
+}
+
+.e {
+    position: absolute;
+}
+
+#scores {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 0 20px;
+    top: 0.1rem;
+    position: absolute;
+}
+
+#scores p {
+    text-align: right;
+    width: 80%;
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #01ff1e, 0 0 10px #01ff1e, 0 0 15px#01ff1e, 0 0 20px #01ff1e;
+    }
+
+    50% {
+        box-shadow: 0 0 10px #01ff1e, 0 0 20px #01ff1e, 0 0 30px #01ff1e, 0 0 40px #01ff1e, 0 0 50px #01ff1e, 0 0 75px #01ff1e, 0 0 100px #01ff1e;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #01ff1e, 0 0 10px #01ff1e, 0 0 15px #01ff1e, 0 0 20px #01ff1e;
+    }
+}
+
+#glow {
+    color: #fff;
+    animation: glow 2s infinite;
+}
+
+
+/* 结算界面 */
+.gameover {
+    width: 3rem;
+    height: 2.2rem;
+    position: absolute;
+    left: 35%;
+    top: 1.7rem;
+    background-color: rgba(165, 165, 165, 0.5);
+    backdrop-filter: blur(50px);
+    border-radius: .1544rem;
+    display: none;
+}
+
+.gameover-content{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    top: 100px;
+    left: 145px;
+}
+
+#top{
+    display: block;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+#score{
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+#restart{
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+}

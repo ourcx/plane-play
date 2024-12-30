@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="//unpkg.com/layui@2.9.21-rc/dist/css/layui.css" rel="stylesheet">
+    <script src="//unpkg.com/layui@2.9.21-rc/dist/layui.js"></script>
+    <script src="网页移动端适应.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- 这里要引入jquery的js文件，在博客那个网页应该是有一个插件引入了这个框架，才保证没报错 -->
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
+	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	crossorigin="anonymous"></script>
+
+
+    <title>大头照打飞机</title>
+</head>
+<script src="http://www.bokequ.com/winter/templets/xq/js/snowy.js"></script>
+<body>
+    <style>
+
+    </style>
+
+
+    </style>
+     <style type="text/css">
+    .snow-container{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:100001;}</style>
+
+
+
+    <!-- 登陆样式 -->
+    <div class="mainload">
+        <!-- <div class="layui-btn-container">
+            <button type="button" class="layui-btn layui-btn-primary" lay-on="test-page" id="aaa" style="background-color: #118f83;border: #118f83 solid 1px;color: #ffffff;border-radius: 50px;">游戏说明</button> -->
+     <div class="load"> 
+            <h2 class="title">大头照上传</h2>
+            <button type="button" class="layui-btn" id="ID-upload-demo-btn">
+                <i class="layui-icon layui-icon-upload"></i> 单图片上传
+            </button>
+            <div style="width: 132px; text-align: center;">
+                <div class="layui-upload-list">
+                    <img class="layui-upload-img" id="ID-upload-demo-img" style="width: 100%; height: 92px;">
+                    <div id="ID-upload-demo-text"></div>
+                </div>
+                <div class="layui-progress layui-progress-big" lay-showPercent="yes" lay-filter="filter-demo">
+                    <div class="layui-progress-bar" lay-percent=""></div>
+                </div>
+            </div>
+            <button type="button" class="layui-btn" id="commit"
+                style="left: 0.13rem;position: relative;margin: 0.06rem 0 0 0;">开始游戏</button>
+                <!-- 要在这陪伴做一个地图选择 -->
+        </div>
+    </div>
+
+    <div class="snow-container"></div>
+
+    <!-- 游戏样式 -->
+
+    <div id="game">
+
+        <div id="gameEnter">
+            <div id="myPlane">
+                <img src="image/my.gif" alt="" class="myPlaneimg">
+            </div>
+            <div id="bullets">
+                <img src="" alt="" class="b">
+            </div>
+            <div id="enemys"></div>
+            <div id="scores">
+                <p>得分：<span id="real">0</span> 分</p>
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- 游戏结束的结算画面 -->
+<div class="gameover">
+    <div class="gameover-content">
+        <p id="top">历史分数最高:<span id="sun">0</span></p>
+        <p id="score">本次分数：<span id="reals">0</span></p>
+        <button type="button" class="layui-btn" id="restart">重新游戏</button>
+    </div>
+</div>
+
+
+
+
+
+    
+    <script src="网页移动端适应.js"></script>
+    <script src="scritp.js"></script>
+    <script>
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

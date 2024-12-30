@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
+<script>
+
+
+
+axios({
+    url:`https://www.picgo.net/api/1/upload`,
+    method:'post',
+    data: {
+        key:'chv_vhFj_36a3465628bc9f80e5bd97716fc9f0208582b9218a99ee1635e5390f2a9cf7ebd5787e6aaf6877f6548e87cf0ce050af6fbf006fef8bdfaae118dac6132ff34b',
+        source:'博客设计/bg.png',
+        format:'json',
+        album_id:'Se4GK',
+    }
+}).then(res=>{console.log(res)})
+</script>
+
+</html>
